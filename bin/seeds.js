@@ -64,11 +64,11 @@ const books = [
     author: "John Green",
     rating: 8
   }
-]
+];
 
 Book.create(books, (err) => {
-  if (err) { throw(err) }
+  if (err) { throw(err); }
   console.log(`Created ${books.length} books`);
-  mongoose.connection.close()
+  mongoose.connection.close();
 });
 console.log("Im a console log");
